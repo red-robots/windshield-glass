@@ -1897,7 +1897,7 @@ h1,h2,h3,h4,h5,h6{font-family:"Merriweather",serif;font-weight:700;color:#164399
 .featured-services .textwrap .text{font-size:13px;font-weight:300}
 .featured-services .textwrap p{margin-top:0}
 .featured-services .button a{color:#164399;text-transform:uppercase;font-style:italic;font-weight:300;font-size:12px;text-decoration:underline;-webkit-transition:all ease-out .3s;transition:all ease-out .3s}
-.featured-services .button a:hover{opacity:.45;margin-left:5px}
+.featured-services .button a:hover{opacity:.45;margin-left:6px}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
