@@ -1,0 +1,225 @@
+.banner-wrap {
+	color: $color-blue;
+	background: url('images/bannerBg.png') center #e4ecfc;
+	background-size: cover;
+	border-bottom: 3px solid #99b9da;
+	padding: 40px 0 120px;
+	.title {
+		font-family: $font-heading;
+		font-style: italic;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 1.2;
+		margin: 0 0 15px;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 35px;
+		}
+		@media screen and (min-width: $midwidth) {
+			font-size: 50px;
+		}
+	}
+	.description {
+		color: $color__text-main;
+		line-height: 1.3;
+		font-size: 16px;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 20px;
+		}
+		@media screen and (min-width: $midwidth) {
+			font-size: 22px;
+		}
+		p {
+			margin-top: 0;
+		}
+	}
+	.cta-buttons {
+		margin-top: 20px;
+		a {
+			display: inline-block;
+			font-family: $font-heading;
+			font-style: italic;
+			font-weight: 500;
+			font-size: 18px;
+			color: #FFF;
+			text-decoration: none;
+			background: $color-blue;
+			padding: 3px 15px;
+			margin: 0 10px;
+			@include transition(all ease-out .3s);
+			@media screen and (min-width: $tabwidth) {
+				font-size: 20px;
+				margin: 0 20px;
+			}
+			&:hover {
+				background: $color-light-blue;
+			}
+		}
+	}
+}
+.phone-toll {
+	margin-top: 40px;
+	.info {
+		display: block;
+		font-size: 20px;
+		margin: 0 8px;
+		@media screen and (min-width: $tabwidth) {
+			display: inline-block;
+		}
+		.desktop {
+			display: none;
+			@media screen and (min-width: $tabwidth) {
+				display: inline-block;
+			}
+		}
+		.mobile {
+			color: $color-blue;
+			text-decoration: none;
+			display: inline-block;
+			@media screen and (min-width: $tabwidth) {
+				display: none;
+			}
+		}
+	}
+	.info i {
+		font-family: $font-heading;
+		font-weight: 600;
+	}
+	.layer1,.layer2,.layer3 {
+		display: inline-block;
+	}
+	.layer1 {
+		display: inline-block;
+		padding: 10px 20px;
+		box-shadow: inset 1px 2px 1px 1px rgba(255,255,255,.5);
+		background: rgb(236,242,253);
+		background: -moz-linear-gradient(-45deg, rgba(236,242,253,1) 1%, rgba(234,240,253,1) 12%, rgba(234,240,253,1) 24%, rgba(234,240,253,1) 36%, rgba(219,230,252,1) 52%, rgba(236,242,253,1) 67%, rgba(219,230,252,1) 84%, rgba(219,230,252,1) 100%);
+		background: -webkit-linear-gradient(-45deg, rgba(236,242,253,1) 1%,rgba(234,240,253,1) 12%,rgba(234,240,253,1) 24%,rgba(234,240,253,1) 36%,rgba(219,230,252,1) 52%,rgba(236,242,253,1) 67%,rgba(219,230,252,1) 84%,rgba(219,230,252,1) 100%);
+		background: linear-gradient(135deg, rgba(236,242,253,1) 1%,rgba(234,240,253,1) 12%,rgba(234,240,253,1) 24%,rgba(234,240,253,1) 36%,rgba(219,230,252,1) 52%,rgba(236,242,253,1) 67%,rgba(219,230,252,1) 84%,rgba(219,230,252,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecf2fd', endColorstr='#dbe6fc',GradientType=1 );
+	}	
+	.layer2 {
+		box-shadow: 2px 3px 0px 0px rgba(145, 167, 213, 0.5);
+	}
+	.layer3 {
+		box-shadow: 0px 3px 10px 0px rgba(194,209,239,1);
+	}
+}
+.featured-services {
+	margin-top: 50px;
+	.row {
+		margin-left: -15px;
+		margin-right: -15px;
+		@media screen and (min-width: $tabwidth) {
+			@include flexbox();
+			@include flexbox-wrap(wrap);
+			@include flexbox-direction(row);
+		}
+	}
+	.box {
+		position: relative;
+		margin-bottom: 35px;
+		@media screen and (min-width: $tabwidth) {
+			width: 50%;
+			margin-bottom: 120px;
+		}
+		@media screen and (min-width: $midwidth) {
+			width: 25%;
+			margin-bottom: 0;
+		}
+		.inside {
+			padding-left: 15px;
+			padding-right: 15px;
+			@media screen and (min-width: $tabwidth) {
+				height: 100%;
+			}
+		}
+		.inner-wrap {
+			position: relative;
+			box-sizing: border-box;
+			@include gradient-light-blue();
+			@media screen and (min-width: $tabwidth) {
+				padding-top: 38%;
+				height: 100%;
+			}
+			@media screen and (min-width: $midwidth) {
+				padding-top: 32%;
+			}
+			&:before,&:after {
+				content: "";
+				display: block;
+				width: 3px;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				background: rgb(229,237,244);
+				background: -moz-linear-gradient(top, rgba(229,237,244,1) 0%, rgba(211,223,242,1) 46%, rgba(221,231,243,1) 100%);
+				background: -webkit-linear-gradient(top, rgba(229,237,244,1) 0%,rgba(211,223,242,1) 46%,rgba(221,231,243,1) 100%);
+				background: linear-gradient(to bottom, rgba(229,237,244,1) 0%,rgba(211,223,242,1) 46%,rgba(221,231,243,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5edf4', endColorstr='#dde7f3',GradientType=0 );
+			}
+			&:before {
+				left: 0;
+			}
+			&:after {
+				right: 0;
+			}
+			.bottomline {
+				display: block;
+				width: 100%;
+				height: 3px;
+				width: 100%;
+				position: absolute;
+				left: 0;
+				bottom: -3px;
+				background: rgb(175,202,221);
+				background: -moz-linear-gradient(left, rgba(175,202,221,1) 0%, rgba(161,189,218,1) 50%, rgba(175,202,221,1) 100%);
+				background: -webkit-linear-gradient(left, rgba(175,202,221,1) 0%,rgba(161,189,218,1) 50%,rgba(175,202,221,1) 100%);
+				background: linear-gradient(to right, rgba(175,202,221,1) 0%,rgba(161,189,218,1) 50%,rgba(175,202,221,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#afcadd', endColorstr='#afcadd',GradientType=1 );
+			}
+		}
+	}
+	.imagediv {
+		padding: 0 20px;
+		@media screen and (min-width: $tabwidth) {
+			position: absolute;
+			top: -30%;
+			left: 0;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.title {
+		color: $color-blue;
+		font-size: 25px;
+		font-style: italic;
+		margin: 20px 0 7px;
+	}
+	.textwrap {
+		padding: 0 20px 20px;
+		position: relative;
+		.text {
+			font-size: 13px;
+			font-weight: 300;
+		}
+		p {
+			margin-top: 0;
+		}
+	}
+	.button a {
+		color: $color-blue;
+		text-transform: uppercase;
+		font-style: italic;
+		font-weight: 300;
+		font-size: 12px;
+		text-decoration: underline;
+		@include transition(all ease-out .3s);
+		&:hover {
+			opacity: 0.45;
+			margin-left: 5px;
+		}
+	}
+}
+
