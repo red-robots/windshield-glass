@@ -241,6 +241,7 @@
 		}
 	}
 	.aboutcol {
+		background: #6b82ad;
 		@media screen and (min-width: $midwidth) {
 			width: 50%;
 			float: left;
@@ -251,7 +252,6 @@
 		}
 		&.left {
 			color: #FFF;
-			background: #6b82ad;
 			padding: 30px 30px 20px;
 			@media screen and (min-width: $midwidth) {
 				padding: 30px 50px 20px;
