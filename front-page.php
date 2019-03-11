@@ -3,8 +3,8 @@ get_header(); ?>
 <div id="primary" class="full-content-area clear">
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<div class="featured-services clear">
-			<div class="wrapper clear">
+		<section class="featured-services clear">
+			<div class="wrapper-big clear">
 				<div class="row clear">
 					<?php  for($i=1; $i<=4; $i++) { 
 						$box_title = get_field('box_'.$i.'_title');
@@ -42,7 +42,41 @@ get_header(); ?>
 					<?php } ?>
 				</div>
 			</div>
-		</div>
+		</section>
+
+		<?php  
+		$about_us_title = get_field('about_us_title');
+		$about_us_description = get_field('about_us_description');
+		$about_us_image = get_field('about_us_image');
+		$about_image = '';
+		if($about_us_image) {
+			$about_image = ' style="background-image:url('.$about_us_image['url'].')"';
+		}
+		?> 
+
+		<section class="about-section section clear">
+			<div class="wrapper-big clear">
+				<div class="row clear">
+					<div class="aboutcol left js-blocks">
+						<div class="innertext">
+							<?php if ($about_us_title) { ?>
+								<h2 class="section-title"><?php echo $about_us_title ?></h2>
+							<?php } ?>
+							<?php if ($about_us_description) { ?>
+								<div class="description"><?php echo $about_us_description ?></div>
+							<?php } ?>
+						</div>
+					</div>
+					<div class="aboutcol right js-blocks"<?php echo $about_image; ?>>
+						<?php if ($about_us_image) { ?>
+							<div class="imagediv clear">
+								<img src="<?php echo $about_us_image['url'] ?>" alt="<?php echo $about_us_image['title'] ?>" />
+							</div>
+						<?php } ?>
+					</div>
+				</div>
+			</div>
+		</section>
 
 	<?php endwhile; ?>
 </div>

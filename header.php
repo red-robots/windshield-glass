@@ -38,7 +38,7 @@
 	</nav>
 
 	<header id="masthead" class="site-header clear" role="banner">
-		<div class="wrapper clear">
+		<div class="wrapper-big clear">
 			<?php  
 			$button_1_label = get_field('button_1_label','option');
 			$button_1_link = get_field('button_1_link','option');
