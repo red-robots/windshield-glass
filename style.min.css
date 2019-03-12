@@ -1667,7 +1667,7 @@ a:hover,a:focus,a:active{color:midnightblue}
 a:focus{outline:thin dotted}
 a:hover,a:active{outline:0}
 .menu a{display:inline-block;color:#FFF;text-decoration:none;-webkit-transition:all ease-out .3s;transition:all ease-out .3s}
-.main-navigation{width:100%;display:none}
+.main-navigation{width:100%;display:none;position:relative}
 @media screen and (min-width:600px){.main-navigation{display:block;float:left}
 }.main-navigation ul{margin:0;padding:0;list-style:none}
 .main-navigation li{position:relative}
