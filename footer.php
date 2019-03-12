@@ -26,7 +26,7 @@
 								<div class="info"><span class="lbl">Toll Free:</span> <?php echo $toll_free ?></div>
 								<?php } ?>
 								<?php if ($email) { ?>
-								<div class="info"><a href="mailto:<?php echo antispambot($email,1); ?>"><?php echo $email ?></a></div>
+								<div class="info"><a href="mailto:<?php echo antispambot($email,1); ?>"><?php echo antispambot($email); ?></a></div>
 								<?php } ?>
 							</div>
 
