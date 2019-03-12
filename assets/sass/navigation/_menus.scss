@@ -46,7 +46,7 @@
 	}
 	.menu ul {
 		position: absolute;
-		width: 200px;
+		width: 220px;
 		background: $color-med-blue;
 		max-height: 0;
 		opacity: 0;
@@ -54,11 +54,12 @@
 		text-align: left;
 		@include transition(all ease-out .3s);
 		ul {
-			left: 200px;
+			left: 220px;
     		top: 0px;
 		}
 		a {
 			display: block;
+			font-size: 13px;
 		}
 	}
 	.current_page_item > a,
