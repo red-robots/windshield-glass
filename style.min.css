@@ -1680,7 +1680,7 @@ a:hover,a:active{outline:0}
 .main-navigation .menu ul{position:absolute;width:220px;background:#3961ae;max-height:0;opacity:0;visibility:hidden;text-align:left;-webkit-transition:all ease-out .3s;transition:all ease-out .3s}
 .main-navigation .menu ul ul{left:220px;top:0}
 .main-navigation .menu ul a{display:block;font-size:13px}
-.main-navigation .current_page_item>a,.main-navigation .current_page_item:hover>a,.main-navigation .menu ul>li:hover>a{opacity:.5}
+.main-navigation .menu ul>li.current_page_item>a,.main-navigation .menu ul>li.current_page_item:hover>a,.main-navigation .menu ul>li:hover>a{opacity:.5}
 .main-navigation .menu li:hover>ul{padding-top:10px;padding-bottom:10px;box-shadow:0 3px 4px 0 rgba(0,0,0,0.25);max-height:400px;opacity:1;visibility:visible}
 .main-navigation .menu ul a{color:#FFF;padding:3px 15px;text-transform:none}
 .main-navigation .menu ul li.menu-item-has-children>a:after{content:"";display:inline-block;width:0;height:0;border-left:5px solid #FFF;border-top:5px solid transparent;border-bottom:5px solid transparent;position:absolute;right:10px;top:10px;opacity:.6}

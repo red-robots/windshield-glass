@@ -62,8 +62,8 @@
 			font-size: 13px;
 		}
 	}
-	.current_page_item > a,
-	.current_page_item:hover > a,
+	.menu ul > li.current_page_item > a,
+	.menu ul > li.current_page_item:hover > a,
 	.menu ul > li:hover > a {
 		opacity: 0.5;
 	}
