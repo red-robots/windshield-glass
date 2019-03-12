@@ -42,10 +42,60 @@
 	.menu > li.current_page_item > a,
 	.menu > li:hover > a {
 		box-shadow: inset 0px 1px 1px 0px rgba(170,212,250,.4);
-		background: #3961ae;
+		background: $color-med-blue;
 	}
-	.menu li ul {
-		display: none;
+	.menu ul {
+		position: absolute;
+		width: 200px;
+		background: $color-med-blue;
+		max-height: 0;
+		opacity: 0;
+		visibility: hidden;
+		text-align: left;
+		@include transition(all ease-out .3s);
+		ul {
+			left: 200px;
+    		top: 0px;
+		}
+		a {
+			display: block;
+		}
+	}
+	.current_page_item > a,
+	.current_page_item:hover > a,
+	.menu ul > li:hover > a {
+		opacity: 0.5;
+	}
+
+	.menu li:hover > ul {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.25);
+		max-height: 400px;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.menu ul a {
+		color: #FFF;
+		padding: 3px 15px;
+		text-transform: none;
+	}
+
+	.menu ul li.menu-item-has-children > a {
+		&:after {
+			content: "";
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border-left: 5px solid #FFF;
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			opacity: 0.6;
+		}
 	}
 }
 .mobile-navigation {
