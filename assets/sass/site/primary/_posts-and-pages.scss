@@ -3,7 +3,7 @@
 	background: url('images/bannerBg.png') center #e4ecfc;
 	background-size: cover;
 	border-bottom: 3px solid #99b9da;
-	padding: 40px 0 120px;
+	padding: 50px 0 120px;
 	.title {
 		font-family: $font-heading;
 		font-style: italic;
@@ -296,4 +296,75 @@
 		margin-top: 0;
 	}
 }
+.default-template {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	.entry-title {
+		margin-top: 0;
+	}
+}
+.default-sidebar {
+	.sblink {
+		margin-bottom: 5px;
+	}
+	.sblink a {
+		display: block;
+		color: #FFF;
+		font-size: 16px;
+		text-decoration: none;
+		background: $color-blue;
+		padding: 7px 15px;
+		line-height: 1.2;
+		@include transition(all ease-out .3s);
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+}
 
+.page-link-list {
+	ul {
+		margin: 0 0;
+		padding: 0 0;
+		list-style: none;
+		text-align: left;
+	}
+	li {
+		position: relative;
+		padding-left: 15px;
+		ul {
+			margin-left: 20px;
+		}
+		&:before {
+			content: "";
+			display: block;
+			width: 6px;
+			height: 6px;
+			background: $color-blue;
+			position: absolute;
+			top: 7px;
+			left: 0;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: $color-blue;
+		@include transition(all ease-out .3s);
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+}
+.error-404 {
+	.page-link-list {
+		margin-top: 10px;
+		display: inline-block;
+	}
+	.page-title {
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+	p {
+		margin-top: 0;
+	}
+}
