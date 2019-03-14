@@ -1966,6 +1966,12 @@ h1,h2,h3,h4,h5,h6{font-family:"Merriweather",serif;font-weight:700;color:#164399
 .error-404 .page-link-list{margin-top:10px;display:inline-block}
 .error-404 .page-title{margin-top:0;margin-bottom:5px}
 .error-404 p{margin-top:0}
+.contact-page .entry-content.half{margin-bottom:40px}
+@media screen and (min-width:900px){.contact-page .entry-content.half{width:45%;float:left;margin-bottom:0}
+}.contact-page .entry-content p{margin-top:0}
+@media screen and (min-width:900px){.contact-page .googlemap{width:48%;float:right}
+}.contact-page .googlemap iframe{width:100% !important}
+.contact-page .googlemap p{margin-top:0}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
