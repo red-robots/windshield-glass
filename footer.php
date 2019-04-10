@@ -28,6 +28,7 @@
 								<?php if ($email) { ?>
 								<div class="info"><a href="mailto:<?php echo antispambot($email,1); ?>"><?php echo antispambot($email); ?></a></div>
 								<?php } ?>
+								site by <a href="https://bellaworksweb.com" target="_blank">BW</a>
 							</div>
 
 							<div class="column map js-blocks">
